@@ -47,22 +47,22 @@ train/ folder with cat and dog images (e.g. cat.0.jpg, dog.0.jpg)
 test1/ folder for prediction images (e.g. 1.jpg, 2.jpg)
 ⚠️ The dataset is not included in this repository due to size limitations.
 
-📥 How to Use the Dataset
-Download the dataset from Kaggle.
+## 📥 How to Use the Dataset
+    Download the dataset from Kaggle.
 
-Extract the downloaded train.zip and test1.zip files.
+    Extract the downloaded train.zip and test1.zip files.
 
-Organize your project directory to have the train and test1 folders directly inside your cats-dogs-kaggle/ directory, like so:
+    Organize your project directory to have the train and test1 folders directly inside your cats-dogs-kaggle/ directory, like so:
 
-cats-dogs-kaggle/
-├── train/
-│   ├── cat.0.jpg
-│   ├── dog.0.jpg
-│   └── ...
-└── test1/
-    ├── 1.jpg
-    ├── 2.jpg
-    └── ...
+    cats-dogs-kaggle/
+     ├── train/
+     │   ├── cat.0.jpg
+     │   ├── dog.0.jpg
+     │   └── ...
+     └── test1/
+         ├── 1.jpg
+         ├── 2.jpg
+         └── ...
 💡 Project Workflow
 Data Loading & Preprocessing using ImageDataGenerator
 CNN Model Building with Conv2D, MaxPooling2D, Dense layers
@@ -97,11 +97,7 @@ predict_custom_image("test1/200.jpg")
 Output:
 
 Predicted: Dog (0.91)
-📚 Learning Outcomes
-Image classification using CNNs
-Real-world dataset handling (Kaggle)
-Preprocessing image data with Keras tools
-Testing predictions on new data
+
 
 
 

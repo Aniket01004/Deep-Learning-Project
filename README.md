@@ -35,27 +35,6 @@ The project includes training, evaluation, and testing with custom images. It's 
 
 ---
 
-# 🐱🐶 Cats vs Dogs Classifier using TensorFlow (Kaggle Dataset)
-
-This repository presents a complete deep learning project that classifies images of cats and dogs using a convolutional neural network (CNN). It uses a **Kaggle-provided dataset** for training and testing and demonstrates the full pipeline — from data preprocessing and model training to prediction and evaluation.
-
----
-
-## 📌 Project Overview
-
-The goal of this project is to build a binary image classifier to distinguish between cats and dogs. A CNN model is trained on labeled images and evaluated on a separate test set. The model is built using TensorFlow and Keras.
-
----
-
-## 🛠️ Technologies Used
-
-- **Python**
-- **TensorFlow / Keras**
-- **Matplotlib** for visualization
-- **NumPy** for data manipulation
-- **Jupyter Notebook**
-
----
 
 📁 Dataset Information
 We use the following dataset:

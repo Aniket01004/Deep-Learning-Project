@@ -36,7 +36,7 @@ The project includes training, evaluation, and testing with custom images. It's 
 ---
 
 
-📁 Dataset Information
+## 📁 Dataset Information
 We use the following dataset:
 
 🔗 Dogs vs. Cats | Kaggle

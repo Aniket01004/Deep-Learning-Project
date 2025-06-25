@@ -35,38 +35,93 @@ The project includes training, evaluation, and testing with custom images. It's 
 
 ---
 
-## 📂 Project Structure
+# 🐱🐶 Cats vs Dogs Classifier using TensorFlow (Kaggle Dataset)
 
-```
-cats-dogs-mini-project/
-├── cats-and-dogs-mini/
-│   ├── train/
-│   │   ├── cats/
-│   │   └── dogs/
-│   └── test/
-│       ├── cats/
-│       └── dogs/
-├── Task_2.ipynb
-└── README.md
-```
-
-- **cats-and-dogs-mini/**: Contains a small set of training and testing images for cats and dogs.
-- **Task_2.ipynb**: Jupyter notebook with complete training, evaluation, and prediction code.
-- **README.md**: Project overview and usage instructions.
+This repository presents a complete deep learning project that classifies images of cats and dogs using a convolutional neural network (CNN). It uses a **Kaggle-provided dataset** for training and testing and demonstrates the full pipeline — from data preprocessing and model training to prediction and evaluation.
 
 ---
 
-## 📌 How to Use
+## 📌 Project Overview
 
-1. Clone this repository or download the ZIP.
-2. Download the [Cats and Dogs Mini Dataset](https://www.kaggle.com/datasets/aleemaparakatta/cats-and-dogs-mini-dataset) and place it in the same folder.
-3. Launch the Jupyter notebook:
-    ```bash
-    jupyter notebook Task_2.ipynb
-    ```
-4. Run the notebook cells to train the model and visualize accuracy.
+The goal of this project is to build a binary image classifier to distinguish between cats and dogs. A CNN model is trained on labeled images and evaluated on a separate test set. The model is built using TensorFlow and Keras.
 
 ---
+
+## 🛠️ Technologies Used
+
+- **Python**
+- **TensorFlow / Keras**
+- **Matplotlib** for visualization
+- **NumPy** for data manipulation
+- **Jupyter Notebook**
+
+---
+
+## 📁 Dataset Information
+
+We use the following dataset:
+
+🔗 [Dogs vs. Cats | Kaggle](https://www.kaggle.com/competitions/dogs-vs-cats/data)
+
+The dataset includes:
+- `train/` folder with cat and dog images (e.g. `cat.0.jpg`, `dog.0.jpg`)
+- `test1/` folder for prediction images (e.g. `1.jpg`, `2.jpg`)
+
+> ⚠️ The dataset is not included in this repository due to size limitations.
+
+### 📥 How to Use the Dataset
+
+1. Download the dataset from Kaggle.
+2. Extract it and organize it like:
+cats-dogs-kaggle/
+├── train/
+│ ├── cat.0.jpg
+│ ├── dog.0.jpg
+│ └── ...
+└── test1/
+├── 1.jpg
+├── 2.jpg
+└── ...
+
+
+---
+
+## 💡 Project Workflow
+
+1. **Data Loading & Preprocessing** using `ImageDataGenerator`
+2. **CNN Model Building** with Conv2D, MaxPooling2D, Dense layers
+3. **Model Training** with validation accuracy tracking
+4. **Model Evaluation** using test data
+5. **Custom Image Prediction** support
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/cats-vs-dogs-kaggle.git
+cd cats-vs-dogs-kaggle
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Download and place the dataset as described above.
+
+Launch the notebook:
+
+bash
+Copy
+Edit
+jupyter notebook Cats_Dogs_Kaggle_Classifier.ipynb
+
+
+
+---
+
 
 ## 🧪 Features
 

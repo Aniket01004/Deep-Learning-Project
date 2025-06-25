@@ -45,12 +45,12 @@ The project includes training, evaluation, and testing with custom images. It's 
 │   ├── train/
 │   └── validation/
 ├── custom_image.jpg            # Custom image for prediction (optional)
-├── cat_dog_classification.ipynb
+├── Task_2.ipynb
 └── README.md
 ```
 
 - `cats_and_dogs_filtered/`: Dataset folder containing 'train' and 'validation' directories with 'cats' and 'dogs' subfolders.
-- `cat_dog_classification.ipynb`: Jupyter Notebook containing the entire model-building, training, evaluation, and prediction pipeline.
+- `Task_2.ipynb`: Jupyter Notebook containing the entire model-building, training, evaluation, and prediction pipeline.
 - `custom_image.jpg`: You can add your own image for testing.
 - `README.md`: This file, describing the project in detail.
 
@@ -111,10 +111,4 @@ Through this project, I gained hands-on experience in:
 
 ---
 
-## 📧 Contact
 
-Feel free to connect or reach out for suggestions, feedback, or collaboration:
-
-**Name**: Aniket Bhoge  
-**Email**: aniketbhoge04@gmail.com  
-**LinkedIn**: [linkedin.com/in/aniketbhoge](https://www.linkedin.com/in/aniketbhoge)

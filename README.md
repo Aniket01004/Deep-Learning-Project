@@ -29,86 +29,61 @@ The project includes training, evaluation, and testing with custom images. It's 
 ## 🛠 Tools and Libraries Used
 
 - **Python**: Core programming language
-- **TensorFlow & Keras**: For building and training the CNN model
-- **Matplotlib**: For visualizing performance metrics
-- **NumPy**: For numerical computations
-- **OpenCV**: For image processing during testing
-- **Jupyter Notebook**: To present and run the code interactively
+- **TensorFlow/Keras**: For building and training the CNN model
+- **Matplotlib**: For plotting training accuracy and loss
+- **Jupyter Notebook**: For step-by-step development
 
 ---
 
 ## 📂 Project Structure
 
 ```
-.
-├── cats_and_dogs_filtered/     # Downloaded and extracted dataset folder
+cats-dogs-mini-project/
+├── cats-and-dogs-mini/
 │   ├── train/
-│   └── validation/
-├── custom_image.jpg            # Custom image for prediction (optional)
+│   │   ├── cats/
+│   │   └── dogs/
+│   └── test/
+│       ├── cats/
+│       └── dogs/
 ├── Task_2.ipynb
 └── README.md
 ```
 
-- `cats_and_dogs_filtered/`: Dataset folder containing 'train' and 'validation' directories with 'cats' and 'dogs' subfolders.
-- `Task_2.ipynb`: Jupyter Notebook containing the entire model-building, training, evaluation, and prediction pipeline.
-- `custom_image.jpg`: You can add your own image for testing.
-- `README.md`: This file, describing the project in detail.
-
----
-
-## 🔄 Project Workflow Overview
-
-### 1. Load Dataset  
-Use `ImageDataGenerator` to load and normalize image data from the `cats_and_dogs_filtered` directory with proper labels.
-
-### 2. Build the CNN  
-Construct a simple CNN model using `Conv2D`, `MaxPooling2D`, `Flatten`, and `Dense` layers.
-
-### 3. Compile & Train  
-Use the `adam` optimizer and `binary_crossentropy` loss to train the model over multiple epochs.
-
-### 4. Visualize Accuracy  
-Plot training and validation accuracy curves to evaluate overfitting and performance.
-
-### 5. Test on Custom Image  
-Load your own image using OpenCV or Keras, resize it, and classify it using the trained model.
-
----
-
-## 💡 Key Features
-
-- Easy-to-follow CNN implementation using TensorFlow/Keras
-- Works with real image datasets structured by folders
-- Includes code to test on any custom cat/dog image
-- Clean, modular, and beginner-friendly code
-- Visual output of training progress and custom predictions
+- **cats-and-dogs-mini/**: Contains a small set of training and testing images for cats and dogs.
+- **Task_2.ipynb**: Jupyter notebook with complete training, evaluation, and prediction code.
+- **README.md**: Project overview and usage instructions.
 
 ---
 
 ## 📌 How to Use
 
-1. Download and extract the dataset from [this link](https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip).
-2. Place the extracted `cats_and_dogs_filtered` folder in the same directory as the notebook.
-3. (Optional) Add a test image (e.g., `custom_image.jpg`) for prediction.
-4. Open `cat_dog_classification.ipynb` in **Jupyter Notebook**, **Colab**, or **VS Code**.
-5. Run all cells step by step to:
-   - Load data
-   - Build and train the model
-   - Evaluate the model
-   - Make predictions on new images
+1. Clone this repository or download the ZIP.
+2. Download the [Cats and Dogs Mini Dataset](https://www.kaggle.com/datasets/aleemaparakatta/cats-and-dogs-mini-dataset) and place it in the same folder.
+3. Launch the Jupyter notebook:
+    ```bash
+    jupyter notebook Task_2.ipynb
+    ```
+4. Run the notebook cells to train the model and visualize accuracy.
+
+---
+
+## 🧪 Features
+
+- CNN-based binary classification (Cat vs Dog)
+- Works with small image dataset
+- Fast training (under 1 minute on CPU)
+- Includes code to test on custom images
 
 ---
 
 ## 📚 Learning Outcomes
 
-Through this project, I gained hands-on experience in:
+Through this project, you'll gain hands-on experience with:
 
-- Loading and preprocessing real image datasets
-- Designing CNN architectures from scratch
-- Training, validating, and testing classification models
-- Evaluating model performance visually and numerically
-- Using TensorFlow and Keras for computer vision tasks
+- Building a CNN in TensorFlow
+- Preprocessing image datasets using `ImageDataGenerator`
+- Visualizing model performance with Matplotlib
+- Deploying a lightweight model for quick testing
 
 ---
-
-

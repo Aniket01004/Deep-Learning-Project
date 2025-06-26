@@ -37,66 +37,82 @@ The project includes training, evaluation, and testing with custom images. It's 
 
 
 ## 📁 Dataset Information
+
 We use the following dataset:
 
-🔗 Dogs vs. Cats | Kaggle
+🔗 [Dogs vs. Cats | Kaggle](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 
 The dataset includes:
+- `train/` folder with cat and dog images (e.g. `cat.0.jpg`, `dog.0.jpg`)
+- `test1/` folder for prediction images (e.g. `1.jpg`, `2.jpg`)
 
-train/ folder with cat and dog images (e.g. cat.0.jpg, dog.0.jpg)
-test1/ folder for prediction images (e.g. 1.jpg, 2.jpg)
-⚠️ The dataset is not included in this repository due to size limitations.
+> ⚠️ The dataset is not included in this repository due to size limitations.
 
-## 📥 How to Use the Dataset
-    Download the dataset from Kaggle.
+### 📥 How to Use the Dataset
 
-    Extract the downloaded train.zip and test1.zip files.
+1. Download the dataset from Kaggle.
+2. Extract it and organize it like:
 
-    Organize your project directory to have the train and test1 folders directly inside your cats-dogs-kaggle/ directory, like so:
+```
+cats-dogs-kaggle/
+├── train/
+│   ├── cat.0.jpg
+│   ├── dog.0.jpg
+│   └── ...
+└── test1/
+    ├── 1.jpg
+    ├── 2.jpg
+    └── ...
+```
 
-    cats-dogs-kaggle/
-     ├── train/
-     │   ├── cat.0.jpg
-     │   ├── dog.0.jpg
-     │   └── ...
-     └── test1/
-         ├── 1.jpg
-         ├── 2.jpg
-         └── ...
-💡 Project Workflow
-Data Loading & Preprocessing using ImageDataGenerator
-CNN Model Building with Conv2D, MaxPooling2D, Dense layers
-Model Training with validation accuracy tracking
-Model Evaluation using test data
-Custom Image Prediction support
-🚀 How to Run
-Clone the repository:
+---
 
-Bash
+## 💡 Project Workflow
 
+1. **Data Loading & Preprocessing** using `ImageDataGenerator`
+2. **CNN Model Building** with Conv2D, MaxPooling2D, Dense layers
+3. **Model Training** with validation accuracy tracking
+4. **Model Evaluation** using test data
+5. **Custom Image Prediction** support
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
 git clone https://github.com/your-username/cats-vs-dogs-kaggle.git
 cd cats-vs-dogs-kaggle
-Install dependencies:
+```
 
-Bash
+2. Install dependencies:
 
+```bash
 pip install -r requirements.txt
-Download and place the dataset as described in the "How to Use the Dataset" section above.
+```
 
-Launch the notebook:
+3. Download and place the dataset as described above.
 
-Bash
+4. Launch the notebook:
 
+```bash
 jupyter notebook Cats_Dogs_Kaggle_Classifier.ipynb
-🎯 Example Prediction
-Within the Cats_Dogs_Kaggle_Classifier.ipynb notebook, you can use the predict_custom_image function for making predictions:
+```
 
-Python
+---
 
+## 🎯 Example Prediction
+
+```python
 predict_custom_image("test1/200.jpg")
+```
+
 Output:
 
+```
 Predicted: Dog (0.91)
+```
 
 
 
